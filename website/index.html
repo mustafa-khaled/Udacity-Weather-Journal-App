@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Jomhuria&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,800&family=Poppins:wght@200;300;400;500;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div id="app" class="app align-items ">
+        <div class="container">
+            <div class="head align-items ">
+                <h1>Weather Journal App</h1>
+            </div>
+            <div class="warnings">
+                <div class="no-zip">
+                    pleas enter Zip Code
+                </div>
+                <div class="wrong-zip">
+                    Wrong Zip Code pleas enter a valid one
+                </div>
+            </div>
+            <div class="inputs-holder align-items ">
+                <input type="text" id="zip" autocomplete="off" placeholder="Enter Zipcode here">
+                <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="9"
+                    cols="50"></textarea>
+                <button id="generate" type="submit"> Generate </button>
+            </div>
+
+            <div id="entryHolder">
+                <div id="temp"></div>
+                <div id="date"></div>
+                <div id="content"></div>
+            </div>
+
+            
+        </div>
+        <div class="footer">
+            <p>&copy; <a href="https://github.com/Safi200">Mustafa Khaled</a></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
